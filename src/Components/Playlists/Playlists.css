@@ -1,0 +1,37 @@
+.container_playlists {
+    height: 100%;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    height: 30vh;
+    max-height: 100%;
+    overflow: auto;
+}
+
+ul::-webkit-scrollbar {
+    width: 0.7rem;
+    /* &-thumb {
+        background-color: rgba(225,225,225,0.6);
+    } */
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: rgba(225,225,225,0.6);
+}
+
+ul li {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+ul li:hover {
+    color: white;
+}

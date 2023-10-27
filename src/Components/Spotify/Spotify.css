@@ -1,0 +1,34 @@
+.container_spotify {
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 85vh 15vh;
+}
+  
+.spotify_body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+    background: linear-gradient(transparent, rgba(0,0,0,1));
+    background-color: rgb(32, 87, 100);
+    color: white;
+}
+
+.spotify_body .body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  
+}
+
+.spotify_body .body::-webkit-scrollbar {
+  width: 0.7rem;
+  max-height: 2rem;
+}
+
+.spotify_body .body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+  
